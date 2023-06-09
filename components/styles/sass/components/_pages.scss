@@ -1,0 +1,130 @@
+.page_01 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin: 0 8%;
+    padding: 24px 0;
+
+    .area-superior {
+        flex: 1 0 auto;
+        margin: 8px;
+
+        img {
+            height: 90px;
+            width: auto;
+        }
+    }
+
+    .area-central {
+        flex: 1 0 auto;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-content: space-evenly;
+        align-items: center;
+
+        .seccion-left {
+            flex: 1 0 auto;
+            margin: 8px;
+            padding: 24px;
+            max-width: 50%;
+
+            img {
+                height: 280px;
+                width: auto;
+            }
+
+            .img2 {
+                height: 140px;
+                width: auto;
+            }
+
+            .opciones {
+                padding: 12px 24px;
+                display: block;
+            }
+
+            .registrarse {
+                text-decoration: none;
+                padding: 12px 0;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .seccion-center {
+            flex: 1 0 auto;
+            padding-top: 36px;
+            max-width: 50%;
+
+            img {
+                height: 280px;
+                width: auto;
+            }
+
+            .opciones {
+                padding: 12px 24px;
+                display: block;
+            }
+
+            .registrarse {
+                text-decoration: none;
+                padding: 12px 0;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .area-inferior {
+        flex: 1 0 auto;
+        // margin: 8px;
+        margin: 18px;
+        border-top: 1px solid $grey-light;
+        width: 80%;
+    }
+}
+
+.opciones {
+    &__verticales {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: space-evenly;
+        align-items: center;
+        margin: 0 8%;
+        padding: 24px 0;
+    }
+
+    &__horizontales {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: space-evenly;
+        align-items: center;
+        margin: 0 8%;
+        padding: 24px 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page_01 {
+        margin: 0;
+        .area-central {
+            flex-flow: nowrap;
+            padding-top: 18px;
+            .seccion-center {
+                img {
+                    height: 340px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

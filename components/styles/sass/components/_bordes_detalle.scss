@@ -1,0 +1,245 @@
+/*=============== BORDES_DETALLES ===============*/
+.bordes_detalle {
+    &__container {
+        color: $grey;
+        margin: 2rem;
+
+        border-bottom: 2px solid $grey-xlight;
+        margin-bottom: 1px;
+        background-color: $container;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__cuerpo {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+    }
+
+    &__parrafo {
+        font-size: $normal-font-size;
+        font-weight: $font-medium;
+        color: $grey;
+        padding-bottom: 24px;
+    }
+
+    &__title {
+        font-size: $h1-font-size;
+        font-weight: $font-medium;
+        color: $dell-blue;
+        text-align: center;
+        line-height: 120%;
+    }
+
+    &__subtitle {
+        font-size: $smaller-font-size;
+        font-weight: $font-medium;
+        color: $grey;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__numeral {
+        padding-bottom: 24px;
+        font-size: $h3-font-size;
+        font-weight: $font-medium;
+        color: $black;
+    }
+
+    &__numeral-texto {
+        padding: 6px 36px;
+        font-size: $normal-font-size;
+        font-weight: $font-medium;
+        color: $grey;
+    }
+
+    &__vinculo_ley {
+        padding: 6px 36px;
+        font-size: $smaller-font-size;
+        font-weight: $font-normal;
+        color: $gris-oscuro;
+        margin-bottom: 24px;
+    }
+
+    &__comentarios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        & ul {
+            columns: 1;
+            list-style: circle;
+            padding: 6px 24px;
+            font-size: $h2-font-size;
+
+            & li {
+                p {
+                    padding: 6px 12px;
+                    font-size: $smaller-font-size;
+                    font-weight: $font-normal;
+                }
+            }
+        }
+    }
+}
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-width: 320px) {
+    .bordes_detalle {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__cuerpo {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__comentarios {
+            display: flex;
+            flex-direction: column;
+            padding: 0 18px;
+        }
+
+        & ul {
+            columns: 1;
+            list-style: circle;
+            padding: 6px 24px;
+            font-size: $h2-font-size;
+
+            & li {
+                p {
+                    padding: 6px 12px;
+                    font-size: $smaller-font-size;
+                    font-weight: $font-normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .bordes_detalle {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__cuerpo {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .bordes_detalle {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__cuerpo {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 960px) {
+    .bordes_detalle {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__cuerpo {
+            display: grid;
+            grid-template-columns: 30% 1fr;
+        }
+
+        &__comentarios {
+            display: flex;
+            flex-direction: column;
+            padding: 0 18px;
+
+            & ul {
+                columns: 1;
+                list-style: circle;
+                padding: 6px 24px;
+                font-size: $h2-font-size;
+
+                & li {
+                    p {
+                        padding: 6px 12px;
+                        font-size: $smaller-font-size;
+                        font-weight: $font-normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .bordes_detalle {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__cuerpo {
+            display: grid;
+            grid-template-columns: 30% 1fr;
+        }
+
+        &__comentarios {
+            display: flex;
+            flex-direction: column;
+            padding: 0 18px;
+
+            & ul {
+                columns: 1;
+                list-style: circle;
+                padding: 6px 24px;
+                font-size: $h2-font-size;
+
+                & li {
+                    p {
+                        padding: 6px 12px;
+                        font-size: $smaller-font-size;
+                        font-weight: $font-normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    // .bordes_detalle {
+    //     &__content {
+    //         grid-template-columns: 1fr;
+    //         row-gap: 2rem;
+    //         justify-content: center;
+    //         align-items: center;
+    //         padding-block: 1rem;
+    //         background-color: red;
+
+    //         // &.active {
+    //         //     grid-template-columns: 10% 1fr;
+    //         // }
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1920px) {
+}

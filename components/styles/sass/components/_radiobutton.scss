@@ -1,0 +1,24 @@
+.radiobutton {
+    font-size: 0.85em;
+    font-weight: 500;
+    color: #5264ae;
+}
+
+.radiobutton label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 6px;
+    height: 4px;
+}
+
+.radiobutton input[type="radiobutton"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.radiobutton input[type="radiobutton"]:checked + label::after {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    content: "\f00c";
+}

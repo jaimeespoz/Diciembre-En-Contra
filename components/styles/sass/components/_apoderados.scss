@@ -1,0 +1,307 @@
+/*=============== APODERADOS ===============*/
+.apoderados {
+    &__container {
+        color: $grey;
+        margin: 2rem;
+
+        border-bottom: 2px solid $grey-xlight;
+        margin-bottom: 1px;
+        background-color: $container;
+    }
+
+    &__encabezado {
+        &__titulo {
+            margin-top: 12px;
+            padding: 24px 0;
+            font-size: $biggest-font-size;
+            text-align: center;
+            line-height: 140%;
+            color: $dell-blue;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        align-content: center;
+    }
+
+    &__secciones {
+        // border: 1px solid red;
+        margin: 0 24px;
+
+        & p {
+            padding: 6px;
+        }
+    }
+
+    &__registro {
+        align-items: center;
+        margin: 0 48px;
+
+        &__titulo {
+            padding: 36px 0 12px 0;
+            font-size: $h1-font-size;
+            weight: $font-medium;
+            text-align: center;
+            color: $grey;
+        }
+
+        &__texto,
+        &__texto-rojo {
+            padding: 4px 0;
+            font-size: $small-font-size;
+            text-align: justify;
+            color: $grey;
+        }
+
+        &__texto-rojo {
+            padding: 8px 0;
+            font-size: $smaller-font-size;
+            font-weight: $font-semi-bold;
+            text-align: center;
+            color: $rojo;
+        }
+    }
+
+    &__datos_personales {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__datos_comuna {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__datos_contacto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.navlink {
+    text-decoration: none;
+    cursor: pointer;
+    font: {
+        size: $normal-font-size;
+        weight: $font-normal;
+    }
+
+    &__xl {
+        font: {
+            size: $h1-font-size;
+        }
+    }
+
+    &__lg,
+    &__lg-red {
+        font: {
+            size: $h2-font-size;
+            weight: $font-medium;
+        }
+        margin: 6px;
+    }
+
+    &__lg-red {
+        color: $rojo;
+        font-weight: $font-semi-bold;
+    }
+
+    &__md {
+        font: {
+            size: $small-font-size;
+        }
+        margin: 6px;
+    }
+
+    &__sm {
+        font: {
+            size: $smaller-font-size;
+        }
+    }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    // .container {
+    //   margin-inline: 1rem;
+    // }
+}
+
+@media screen and (min-width: 320px) {
+    // .container {
+    //   margin-inline: 1rem;
+    // }
+}
+
+@media screen and (min-width: 360px) {
+    .apoderados {
+        &__container {
+            margin: 0.5rem;
+        }
+
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__encabezado {
+            &__titulo {
+                margin-top: 12px;
+                padding: 24px 0;
+                font-size: $h2-font-size;
+                text-align: center;
+                line-height: 140%;
+                color: $dell-blue;
+            }
+        }
+
+        &__secciones {
+            display: none;
+        }
+
+        &__datos_personales {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__datos_comuna {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__datos_contacto {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .apoderados {
+        &__encabezado {
+            &__titulo {
+                margin-top: 12px;
+                padding: 24px 0;
+                font-size: $h1-font-size;
+                text-align: center;
+                line-height: 140%;
+                color: $dell-blue;
+            }
+        }
+
+        &__datos_personales {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        &__datos_contacto {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        &__datos_comuna {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 960px) {
+    .apoderados {
+        &__content {
+            grid-template-columns: 25% 75%;
+        }
+
+        &__encabezado {
+            &__titulo {
+                margin-top: 12px;
+                padding: 24px 0;
+                font-size: $biggest-font-size;
+                text-align: center;
+                line-height: 140%;
+                color: $dell-blue;
+            }
+        }
+
+        &__secciones {
+            display: block;
+        }
+
+        &__datos_personales {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &__datos_comuna {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        &__datos_contacto {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .apoderados {
+        &__content {
+            grid-template-columns: 25% 75%;
+        }
+
+        &__secciones {
+            display: block;
+        }
+
+        &__datos_personales {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        &__datos_comuna {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        &__datos_contacto {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    // .apoderados {
+    // .container {
+    //   margin-inline: auto;
+    // }
+
+    // &__container {
+    //     grid-template-columns: repeat(4, 280px);
+    //     row-gap: 3rem;
+    //     padding-block: 2.5rem 4rem;
+    // }
+    // }
+}
+
+@media screen and (min-width: 1920px) {
+    // .section {
+    //   padding-block: 7rem 2rem;
+    // }
+
+    // .section__subtitle {
+    //   font-size: %normal-font-size;
+    // }
+}

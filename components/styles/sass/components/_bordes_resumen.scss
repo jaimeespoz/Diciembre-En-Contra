@@ -1,0 +1,278 @@
+.bordes {
+    &__container {
+        color: $grey;
+        margin: 2rem;
+
+        border-bottom: 2px solid $grey-xlight;
+        margin-bottom: 1px;
+        background-color: $container;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__avance-retroceso {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+
+    &__bloque {
+        margin: 36px 0 18px 0;
+
+        &__titulo {
+            font-size: $biggest-font-size;
+            text-align: center;
+            line-height: 120%;
+            color: $dell-blue;
+        }
+
+        &__subtitulo {
+            font-size: $biggest-font-size;
+            text-align: center;
+            color: $dell-blue;
+        }
+
+        &__texto {
+            padding: 6px 0;
+            font-size: $small-font-size;
+            color: $grey;
+        }
+    }
+
+    &__card {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        // margin: 0px 24px;
+
+        &:hover {
+            bottom: 0;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 240px;
+    }
+
+    &__modal {
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        padding: 2px 12px;
+        background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 0%, hsla(213, 70%, 40%, 0.5) 80%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        /* For Safari */
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: bottom 0.4s;
+        bottom: 0;
+    }
+
+    &__subtitle,
+    &__button {
+        color: $white;
+        font-size: $normal-font-size;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: $h3-font-size;
+        font-weight: $font-medium;
+        color: $white;
+        padding: 8px 2px;
+    }
+
+    &__title {
+        font-size: $h2-font-size;
+        font-weight: $font-medium;
+        color: $white;
+        text-align: center;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        font-size: $normal-font-size;
+        font-weight: $font-medium;
+        color: $white;
+        padding: 8px 2px;
+
+        & i {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    // .container {
+    //   margin-inline: 1rem;
+    // }
+}
+
+@media screen and (min-width: 320px) {
+    // .bordes {
+    //     &__content {
+    //         display: grid;
+    //         grid-template-columns: repeat(1, 1fr);
+    //         row-gap: 3rem;
+    //         padding-block: 2.5rem 4rem;
+    //     }
+    //     &__bloque {
+    //         margin: 36px 0 18px 0;
+
+    //         &__titulo {
+    //             font-size: $h2-font-size;
+    //             text-align: center;
+    //             line-height: 120%;
+    //             color: $dell-blue;
+    //         }
+    //         &__subtitulo {
+    //             font-size: $smaller-font-size;
+    //             text-align: center;
+    //             color: $dell-blue;
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (min-width: 360px) {
+    .bordes {
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__bloque {
+            margin: 36px 0 18px 0;
+
+            &__titulo {
+                font-size: $h2-font-size;
+                text-align: center;
+                line-height: 120%;
+                color: $dell-blue;
+            }
+
+            &__subtitulo {
+                font-size: $normal-font-size;
+                text-align: center;
+                color: $dell-blue;
+            }
+
+            &__texto {
+                padding: 6px 0;
+                font-size: $small-font-size;
+                color: $grey;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .bordes {
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__bloque {
+            margin: 36px 0 18px 0;
+
+            &__titulo {
+                font-size: $h1-font-size;
+                text-align: center;
+                line-height: 120%;
+                color: $dell-blue;
+            }
+
+            &__subtitulo {
+                font-size: $normal-font-size;
+                text-align: center;
+                color: $dell-blue;
+            }
+
+            &__texto {
+                padding: 6px 0;
+                font-size: $small-font-size;
+                color: $grey;
+            }
+        }
+    }
+}
+
+// /* For medium devices */
+@media screen and (min-width: 960px) {
+    .bordes {
+        &__content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__bloque {
+            margin: 36px 0 18px 0;
+
+            &__titulo {
+                font-size: $biggest-font-size;
+                text-align: center;
+                line-height: 120%;
+                color: $dell-blue;
+            }
+
+            &__subtitulo {
+                font-size: $h1-font-size;
+                text-align: center;
+                color: $dell-blue;
+            }
+
+            &__texto {
+                padding: 6px 0;
+                font-size: $small-font-size;
+                color: $grey;
+            }
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    // .bordes {
+    //     &__content {
+    //         grid-template-columns: repeat(4, 1fr);
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1366px) {
+    // .bordes {
+    //     &__content {
+    //         grid-template-columns: repeat(4, 280px);
+    //     }
+
+    //     &__button {
+    //         font-size: $normal-font-size;
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1920px) {
+    // .bordes {
+    //     &__content {
+    //         grid-template-columns: repeat(4, 280px);
+    //     }
+
+    //     &__button {
+    //         font-size: $normal-font-size;
+    //     }
+    // }
+}

@@ -1,0 +1,198 @@
+button,
+input[type="submit"],
+input[type="reset"] {
+    border: 1px solid $gris-medio-claro;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem 0 0;
+    display: inline-block;
+    background-color: $textColor;
+    color: $gris-medio-claro;
+    font-weight: $font-semi-bold;
+    font-size: $small-font-size;
+    // line-height: 80%;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: $white;
+    background-color: #007bff;
+    border-color: #007bff;
+    font {
+        size: $small-font-size;
+        weight: $font-normal;
+    }
+    padding: 6px 18px;
+    margin: 2px 8px;
+    // line-height: 100%;
+}
+
+.btn-primary:hover {
+    color: $white;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: $white;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: $white;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.boton-generico {
+    border: 1px solid $grey;
+    border-radius: 25px;
+    margin: 6px 8px;
+    padding: 8px 12px;
+    align-items: center;
+    background-color: inherit;
+    font: {
+        weight: $font-light;
+        size: $small-font-size;
+    }
+    color: $grey;
+
+    &:hover {
+        background-color: $grey;
+        font: {
+            weight: $font-normal;
+        }
+        color: $white;
+    }
+}
+
+.boton-generico2 {
+    border: 1px solid $steal-blue;
+    border-radius: 25px;
+    margin: 6px 8px;
+    padding: 8px 12px;
+    align-items: center;
+    background-color: $steal-blue;
+    font: {
+        weight: $font-light;
+        size: $small-font-size;
+    }
+    color: $white;
+
+    &:hover {
+        background-color: $grey;
+        font: {
+            weight: $font-normal;
+        }
+        color: $white;
+    }
+}
+
+.boton-generico3 {
+    border: 1px solid $steal-blue;
+    border-radius: 25px;
+    margin: 6px 8px;
+    padding: 8px 12px;
+    align-items: center;
+    background-color: $dell-blue;
+    min-width: 220px;
+    font: {
+        weight: $font-medium;
+        size: $normal-font-size;
+    }
+    color: $white;
+
+    &:hover {
+        background-color: $grey;
+        font: {
+            weight: $font-medium;
+        }
+        color: $white;
+    }
+}
+
+/*=============== BUTTON ===============*/
+.button {
+    display: inline-block;
+    background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
+    color: $white;
+    padding: 14px 28px;
+    border-radius: 0.5rem;
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+    box-shadow: 0 4px 8px hsla(228, 66%, 45%, 0.25);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 4px 8px hsla(228, 66%, 45%, 0.25);
+    }
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For small devices */
+// @media screen and (max-width: 320px) {
+// }
+
+@media screen and (min-width: 320px) {
+    .boton-generico3 {
+        min-width: 160px;
+    }
+}
+@media screen and (min-width: 360px) {
+    .boton-generico3 {
+        min-width: 180px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    // .home {
+    //     &__content {
+    //         grid-template-columns: repeat(2, 1fr);
+    //     }
+    // }
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 960px) {
+    // .home {
+    //     &__content {
+    //         grid-template-columns: repeat(2, 1fr);
+    //     }
+    // }
+}
+
+// /* For large devices */
+@media screen and (min-width: 1024px) {
+    // .home {
+    //     &__content {
+    //         grid-template-columns: repeat(2, 1fr);
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1366px) {
+    // .home {
+    //     &__content {
+    //         grid-template-columns: repeat(2, 1fr);
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1920px) {
+    // .home {
+    //     &__content {
+    //         grid-template-columns: repeat(2, 1fr);
+    //     }
+    // }
+}

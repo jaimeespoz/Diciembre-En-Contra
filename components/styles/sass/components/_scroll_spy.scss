@@ -1,0 +1,155 @@
+$container-width: 1200px;
+
+.scroll-spy {
+    &__section {
+        // padding: 2rem;
+        // padding-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 60vh;
+        text-align: center;
+        padding: 4rem 10rem;
+
+        p {
+            padding: 6px 0;
+        }
+
+        &__titulo {
+            display: block;
+            font-size: $h1-font-size;
+            font-weight: $font-medium;
+            line-height: 110%;
+            color: $dell-blue;
+            padding: 18px 0;
+        }
+
+        &__subtitulo {
+            display: block;
+            font-size: $super-font-size;
+            font-weight: $font-normal;
+            padding: 8px 0;
+            text-align: justify;
+        }
+
+        &__texto {
+            font-size: $smaller-font-size;
+            font-weight: $font-normal;
+            color: $grey;
+            text-align: justify;
+        }
+    }
+
+    &__panel {
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        background-color: $dell-blue;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.5s ease;
+        /* De arriba */
+        transform: translate(0, -100%);
+        /* De abajo */
+        transform: translate(0, 100%);
+        /* De la derecha */
+        transform: translate(100%, 0);
+        /* De la izquierda */
+        transform: translate(-100%, 0);
+
+        &.is-active {
+            transform: translate(0, 0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    // &__panel-btn {
+    //     position: fixed;
+    //     z-index: 999;
+    //     bottom: 1vh;
+    //     right: 1vw;
+    //     width: 4rem;
+    //     height: 4rem;
+    //     border-radius: 50%;
+    //     padding: 0;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     background-color: $mainColor;
+    // }
+
+    &__menu {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & a {
+            padding: 0.4rem 1rem;
+            width: inherit;
+            display: block;
+            font-size: $h3-font-size;
+            text-decoration: none;
+            color: $white;
+            transition: all 0.3s ease;
+
+            &:hover {
+                font-weight: $font-semi-bold;
+                color: $grey;
+                background-color: $dell-blue;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .scroll-spy {
+        &__panel {
+            align-self: start;
+            position: sticky;
+            padding: 36px 0;
+            top: 4rem;
+            justify-content: flex-start;
+            background-color: $dell-blue;
+            transform: translate(0, 0);
+            opacity: 1;
+            visibility: visible;
+            overflow-y: auto;
+        }
+
+        //     &__panel-btn {
+        //         display: none;
+        //     }
+
+        //     &__menu {
+        //         justify-content: start;
+        //         text-align: left;
+
+        //         & a {
+        //             padding: 0.75rem;
+        //             font-size: $h3-font-size;
+        //         }
+
+        //         &:hover,
+        //         &.active {
+        //             color: $second-color;
+        //             background-color: $mainColor;
+        //         }
+        //     }
+        // }
+
+        // __scroll-top-btn {
+        //     right: initial;
+        //     left: calc(4.25rem + 1vw);
+    }
+}

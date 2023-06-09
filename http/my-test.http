@@ -1,0 +1,70 @@
+###
+GET https://zkt7kkizv4.execute-api.us-east-1.amazonaws.com/prod/getapoderadorut/1
+
+###
+GET https://zkt7kkizv4.execute-api.us-east-1.amazonaws.com/prod/getregiones
+
+###
+GET https://zkt7kkizv4.execute-api.us-east-1.amazonaws.com/prod/getcomunas/01
+
+
+###
+GET https://zkt7kkizv4.execute-api.us-east-1.amazonaws.com/prod/getapoderadorut/1
+
+
+###
+POST https://zkt7kkizv4.execute-api.us-east-1.amazonaws.com/prod/putnuevoapoderado HTTP/1.1
+Content-Type: application/json
+
+{
+    "RUT": "12345678",
+	"DV": "K",
+	"NOMBRES": "Prueba Nombres",
+	"APELLIDO_PATERNO": "Prueba Paterno",
+	"APELLIDO_MATERNO": "Prueba Materno",
+	"TELEFONO_MOVIL": "Prueba Paterno",
+	"EMAIL": "Prueba Correo",
+	"TIPO_LOCAL_MESA": 1,
+	"CODIGO_REGION_VOTA": "99",
+	"CODIGO_COMUNA_VOTA": "99999",
+	"CODIGO_LOCAL_VOTA": "99999",
+	"MESA_VOTA": "999",
+	"PREFERENCIA_APODERADO": 1,
+	"VALIDADO": "0",
+	"VALIDADO_CUANDO": "19000101",
+	"RECHAZADO": "0",
+	"RECHAZADO_CUANDO": "19000101",
+	"RECHAZADO_MOTIVO": "0",
+	"CONTACTADO": "0",
+	"CONTACTADO_CUANDO": "19000101",
+	"ASIGNADO": "0",
+	"ASIGNADO_CUANDO": "19000101",
+	"ASIGNACION_COMUNICADA": "1",
+	"ASIGNACION_COMUNICADA_CUANDO": "19000101",
+	"CODIGO_COMUNA_ASIGNADA": "0",
+	"CODIGO_LOCAL_ASIGNADO": "0",
+	"CODIGO_MESA_ASIGNADA": "0",
+	"SE_PRESENTO_DIA_VOTACION": "9"
+}
+
+###
+POST https://zkt7kkizv4.execute-api.us-east-1.amazonaws.com/prod/putnuevoapoderado HTTP/1.1
+Content-Type: application/json
+
+{  
+    "RUT": "12345678",
+	"DV": "K",
+	"NOMBRES": "Prueba Nombres",
+	"APELLIDO_PATERNO": "Prueba Paterno",
+	"APELLIDO_MATERNO": "Prueba Materno",
+	"TELEFONO_MOVIL": "56965687532",
+	"EMAIL": "Prueba Correo",
+	"TIPO_LOCAL_MESA": "1",
+	"CODIGO_REGION_VOTA": "99",
+	"CODIGO_COMUNA_VOTA": "99999",
+	"CODIGO_LOCAL_VOTA": "99999",
+	"MESA_VOTA": "999",
+	"PREFERENCIA_APODERADO": 1
+}
+
+###

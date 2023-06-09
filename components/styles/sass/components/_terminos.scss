@@ -1,0 +1,120 @@
+/*=============== LOGIN ===============*/
+.terminos {
+    color: $grey;
+
+    &__container {
+        // row-gap: 2.5rem;
+        border-bottom: 2px solid $grey-xlight;
+        margin-bottom: 1px;
+        // background-color: blue;
+    }
+
+    &__content {
+        grid-template-columns: 40% 60%;
+        // gap: 2.5rem 4rem;
+    }
+
+    &__data {
+        text-align: center;
+    }
+}
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    // .terminos {
+    //     &__content {
+    //         background-color: purple;
+    //     }
+    // }
+}
+
+@media screen and (min-width: 320px) {
+    // .terminos {
+    //     &__content {
+    //         padding: 2px 16px;
+    //         // background-color: yellow;
+
+    //         img {
+    //             width: 100%;
+    //             height: auto;
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (min-width: 360px) {
+    // .terminos {
+    //     &__content {
+    //         background-color: purple;
+    //     }
+    // }
+}
+
+@media screen and (min-width: 480px) {
+    // .terminos {
+    //     &__content {
+    //         padding: 2px 16px;
+    //         grid-template-columns: 20%, 1fr;
+    //         // background-color: blue;
+
+    //         img {
+    //             width: 100%;
+    //             height: auto;
+    //         }
+    //     }
+    // }
+}
+
+// /* For medium devices */
+@media screen and (min-width: 960px) {
+    // .terminos {
+    //     &__content {
+    //         padding: 2px 16px;
+    //         grid-template-columns: 20%, 1fr;
+    //         // background-color: green;
+
+    //         img {
+    //             width: 100%;
+    //             height: auto;
+    //         }
+    //     }
+    // }
+}
+
+// /* For large devices */
+@media screen and (min-width: 1024px) {
+    // .terminos {
+    //     &__content {
+    //         padding: 2px 16px;
+    //         grid-template-columns: 20%, 1fr;
+    //         // background-color: orange;
+
+    //         img {
+    //             width: 100%;
+    //             height: auto;
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1366px) {
+    // .terminos {
+    //     &__content {
+    //         padding: 2px 16px;
+    //         grid-template-columns: 20%, 1fr;
+    //         // background-color: red;
+
+    //         img {
+    //             width: 100%;
+    //             height: auto;
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1920px) {
+    // .container {
+    //     margin-left: 3rem;
+    //     margin-right: 3rem;
+    // }
+}

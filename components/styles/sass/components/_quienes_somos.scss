@@ -1,0 +1,182 @@
+.quienes-somos {
+    &__container {
+        color: $grey;
+        margin: 2rem;
+
+        border-bottom: 2px solid $grey-xlight;
+        margin-bottom: 1px;
+        background-color: $container;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__data {
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    &__subtitle,
+    &__education {
+        font-size: $h2-font-size;
+        color: $dell-blue;
+    }
+
+    &__subtitle span,
+    &__title {
+        color: $grey;
+    }
+
+    &__title {
+        font-size: $h3-font-size;
+        font-weight: $font-semi-bold;
+        color: $dell-blue;
+    }
+
+    &__description {
+        margin-block: 1rem 1.5rem;
+        background-color: red;
+        font-size: $font-normal;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        column-gap: 1.25rem;
+        padding: 18px 0;
+    }
+
+    &__social-link {
+        display: flex;
+        background-color: $dell-blue;
+        padding: 0.8rem 0.5rem;
+        color: $white;
+        font-size: 1.5rem;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: translateY(-0.25rem);
+        }
+    }
+
+    &__image {
+        justify-self: center;
+    }
+
+    &__blob {
+        width: 320px;
+        fill: $first-color;
+        filter: drop-shadow(0 12px 12px hsla(231, 100%, 40%, 0.2));
+    }
+
+    &__colaboradores {
+        margin: 48px 12px;
+        font-size: $h1-font-size;
+        font-weight: $font-medium;
+        color: $dell-blue;
+
+        &__detalle {
+            & ul {
+                columns: 2;
+                & li {
+                    & p {
+                        font-size: $h3-font-size;
+                        font-weight: $font-normal;
+                        color: $grey;
+                        padding: 6px 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    // .container {
+    //   margin-inline: 1rem;
+    // }
+}
+
+@media screen and (min-width: 320px) {
+    // .container {
+    //   margin-inline: 1rem;
+    // }
+}
+
+@media screen and (min-width: 360px) {
+    .quienes-somos {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    // .quienes-somos {
+    //     &__content {
+    //         display: grid;
+    //         grid-template-columns: repeat(2, 1fr);
+    //     }
+    // }
+}
+
+/* For medium devices */
+@media screen and (min-width: 960px) {
+    .quienes-somos {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    // .section {
+    //     padding-block: 7rem 2rem;
+    // }
+
+    // .section__subtitle {
+    //     font-size: var(--normal-font-size);
+    // }
+}
+
+@media screen and (min-width: 1366px) {
+    // .quienes-somos__container {
+    //     grid-template-columns: 455px 550px;
+    //     column-gap: 7rem;
+    //     padding-block: 2rem 3rem;
+    // }
+
+    // .quienes-somos__blob {
+    //     width: 550px;
+    // }
+
+    // .quienes-somos__content {
+    //     row-gap: 4.5rem;
+    // }
+
+    // .quienes-somos__description {
+    //     margin-block: 1.5rem 2.5rem;
+    // }
+
+    // .quienes-somos__social {
+    //     column-gap: 1.5rem;
+    // }
+}
+
+@media screen and (min-width: 1920px) {
+    // .section {
+    //     padding-block: 7rem 2rem;
+    // }
+
+    // .section__subtitle {
+    //     font-size: var(--normal-font-size);
+    // }
+}

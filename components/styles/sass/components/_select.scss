@@ -1,0 +1,37 @@
+.bootstrap-select {
+    position: relative;
+    height: 26px;
+    background-color: rgba(255, 255, 224, 0.4);
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    color: navy;
+    font-weight: 500;
+    font-size: 0.9em !important;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-color: cornflowerblue;
+    border-width: medium;
+    max-width: 240px;
+
+    & label {
+        position: relative;
+        display: inline-block;
+        max-width: 240px;
+    }
+
+    & select {
+        display: inline-block;
+        padding: 4px 3px 5px 5px;
+        max-width: 240px;
+        outline: none;
+        color: black;
+        border: 1px solid #c8bfc4;
+        border-radius: 4px;
+        box-shadow: inset 1px 1px 2px #ddd8dc;
+        background-color: rgba(255, 255, 224, 0.4);
+    }
+}

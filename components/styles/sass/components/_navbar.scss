@@ -1,0 +1,144 @@
+.navigation {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 70px;
+    // height: 100%;s
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid $blue-rey;
+    background: $blue-rey;
+    transition: width 0.5s;
+    overflow-x: hidden;
+
+    &.active {
+        width: 300px;
+    }
+
+    & ul {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        padding-left: 5px;
+        padding-top: 12px;
+        margin-top: 20px;
+        margin-bottom: 12px;
+
+        & li {
+            position: relative;
+            list-style: none;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            &.active {
+                background: $white;
+
+                & a {
+                    color: $gris-medio-oscuro;
+                }
+
+                & b:nth-child(1),
+                & b:nth-child(2) {
+                    display: block;
+                }
+            }
+
+            & b:nth-child(1) {
+                position: absolute;
+                top: -20px;
+                height: 20px;
+                width: 100%;
+                background: $white;
+                display: none;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-bottom-right-radius: 20px;
+                    background: $blue-rey;
+                }
+            }
+
+            & b:nth-child(2) {
+                position: absolute;
+                bottom: -20px;
+                height: 20px;
+                width: 100%;
+                background: $white;
+                display: none;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-top-right-radius: 20px;
+                    background: $blue-rey;
+                }
+            }
+
+            & a {
+                position: relative;
+                display: block;
+                width: 100%;
+                display: flex;
+                text-decoration: none;
+                color: $white;
+
+                & .title {
+                    position: relative;
+                    display: block;
+                    padding-left: 10px;
+                    height: 60px;
+                    line-height: 60px;
+                    white-space: normal;
+                    font-size: $h3-font-size;
+                }
+            }
+
+            & .icon {
+                position: relative;
+                display: block;
+                min-width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.toggle {
+    position: absolute;
+    top: 2px;
+    right: 80px;
+    left: 12px;
+    width: 50px;
+    background: $blue-rey;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.toggle ion-icon.open,
+.toggle.active ion-icon.close {
+    display: block;
+}
+
+.toggle ion-icon.close,
+.toggle.active ion-icon.open {
+    display: none;
+}

@@ -1,0 +1,20 @@
+input[type="text"],
+input[type="email"],
+textarea {
+    border: thin solid $grey-xlight;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: $normal-font-size;
+    line-height: 0.95%;
+    background-color: $white;
+    color: $black;
+}
+
+textarea {
+    font-family: inherit;
+    resize: none;
+}

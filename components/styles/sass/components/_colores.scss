@@ -1,0 +1,39 @@
+.fc-white {
+    color: $white;
+}
+
+.fc-black {
+    color: $black;
+}
+
+.fc-blue {
+    color: $dell-blue;
+}
+
+.fc-grey {
+    color: $grey;
+}
+
+.fc-grey-light {
+    color: $grey-light;
+}
+
+.fc-secondaryColor {
+    color: $secondaryColor;
+}
+
+.bg-degrade {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.bg-azul {
+    background-color: $dell-blue;
+}
+
+.bg-gris-medio {
+    background-color: $gris-medio;
+}
+
+.bg-gris-oscuro {
+    background-color: $gris-oscuro;
+}

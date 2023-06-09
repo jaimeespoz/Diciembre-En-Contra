@@ -1,0 +1,13 @@
+const config = {
+  appConfig: {
+    host: process.env.APP_HOST,
+    port: process.env.APP_PORT,
+  },
+  // corsConfig: {
+  //   origin: process.env.CORS_ORIGIN,
+  //   methods: process.env.CORS_METHOD,
+  //   credentials: process.env.CORS_CREDENTIALS,
+  // },
+};
+
+module.exports = config;

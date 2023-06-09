@@ -1,0 +1,127 @@
+.form-group-sm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0rem;
+    margin: 6px 0;
+
+    input {
+        border: 1px solid $grey-xlight;
+    }
+
+    textarea {
+        border: 1px solid $grey-xlight;
+    }
+}
+
+.form-label-sm {
+    padding: 0.15rem 0.5rem;
+    font-size: $small-font-size;
+    $font-normal: $font-medium;
+    color: $black;
+    white-space: nowrap;
+}
+
+.form-control-sm {
+    height: calc(1.5em + 0.5rem + 2px);
+    padding: 0.05rem 0.5rem;
+    font-size: $small-font-size;
+    $font-normal: $font-medium;
+    border-radius: 0.2rem;
+    background-color: white;
+
+    &:focus {
+        color: #495057;
+        background-color: $white;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    &::placeholder {
+        color: #6c757d;
+        opacity: 1;
+    }
+
+    &:disabled,
+    &[readonly] {
+        background-color: $grey-xlight;
+        opacity: 1;
+    }
+}
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    // .form-group-sm {
+    //     // background-color: purple;
+    // }
+}
+
+@media screen and (min-width: 320px) {
+    .form-group-sm {
+        padding: 2px 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-label-sm {
+        text-align: left;
+        padding: 0.05rem 0.5rem !important;
+    }
+    .form-control-sm {
+        padding: 0.05rem 0.5rem !important;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    // .form-group-sm {
+    //     // background-color: purple;
+    // }
+}
+
+@media screen and (min-width: 480px) {
+    // .form-group-sm {
+    //     // background-color: purple;
+    // }
+}
+
+/* For medium devices */
+@media screen and (min-width: 960px) {
+    .form-group-sm {
+        padding: 2px 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-label-sm {
+        text-align: left;
+        padding: 0.05rem 0.5rem !important;
+    }
+    .form-control-sm {
+        padding: 0.05rem 0.5rem !important;
+    }
+}
+
+// /* For large devices */
+@media screen and (min-width: 1024px) {
+    .form-group-sm {
+        padding: 2px 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .form-group-sm {
+        padding: 2px 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    // .container {
+    //     margin-left: 3rem;
+    //     margin-right: 3rem;
+    // }
+}
+
+@media screen and (min-width: 1920px) {
+    // .container {
+    //     margin-left: 3rem;
+    //     margin-right: 3rem;
+    // }
+}

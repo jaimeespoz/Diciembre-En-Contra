@@ -1,0 +1,32 @@
+{
+  "name": "version-0100",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "compile": "sass --no-source-map components/styles/sass:components/styles/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.0",
+    "boxicons": "^2.1.4",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "needle": "^3.2.0",
+    "path": "^0.12.7",
+    "sass": "^1.62.1",
+    "uuid": "^9.0.0"
+  }
+}

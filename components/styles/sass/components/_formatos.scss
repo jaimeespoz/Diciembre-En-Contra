@@ -1,0 +1,84 @@
+.titulo-xxxl {
+    font-size: $biggest-font-size;
+    text-align: center;
+    line-height: 120%;
+    // color: inherit;
+}
+
+.titulo-xxl {
+    font-size: $h1-font-size;
+    text-align: center;
+    line-height: 120%;
+    // color: inherit;
+}
+
+.titulo-xl {
+    font-size: $h2-font-size;
+    text-align: center;
+    line-height: 120%;
+    // color: inherit;
+}
+
+.titulo-lg {
+    font-size: $h3-font-size;
+    text-align: center;
+    line-height: 120%;
+    // color: inherit;
+}
+
+.titulo {
+    font-size: $h3-font-size;
+    text-align: center;
+    color: inherit;
+}
+
+.texto {
+    font-size: $normal-font-size;
+    text-align: justify;
+    color: inherit;
+}
+
+.texto-md {
+    font-size: $small-font-size;
+    text-align: justify;
+    color: inherit;
+}
+
+.texto-sm {
+    font-size: $smaller-font-size;
+    text-align: justify;
+    white-space: wrap;
+    word-wrap: normal;
+    color: inherit;
+}
+
+.texto-vinculo {
+    color: $dell-blue;
+    font-size: $smaller-font-size;
+    text-align: right;
+    color: inherit;
+}
+
+.fw-bold {
+    font-weight: $font-bold;
+}
+
+.fw-semi-bold {
+    font-weight: $font-semi-bold;
+}
+
+.fw-medium {
+    font-weight: $font-medium;
+}
+
+.fw-normal {
+    font-weight: $font-normal;
+}
+
+.fw-light {
+    font-weight: $font-light;
+}
+
+.mt-1 {
+    margin: 0 0.75rem;
+}
